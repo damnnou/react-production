@@ -1,4 +1,4 @@
-import path from "path";
+import { buildDevServer } from "./buildDevServer";
 import { buildLoaders } from "./buildLoaders";
 import { buildPLugins } from "./buildPlugins";
 import { buildResolvers } from "./buildResolvers";
@@ -22,5 +22,7 @@ export function buildWebpackConfig(
             rules: buildLoaders(),
         },
         resolve: buildResolvers(),
+        devtool: "inline-source-map",
+        devServer: buildDevServer(options),
     };
 }
