@@ -1,8 +1,8 @@
 import React from "react";
-import "./Counter.scss";
+import classes from "./Counter.module.scss";
 
 const Counter = () => {
-    return <div className="ads">Counter</div>;
+    return <div className={classes.ads}>Counter</div>;
 };
 
 export default Counter;
