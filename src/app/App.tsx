@@ -7,11 +7,10 @@ import { classNames } from "shared/lib/classNames/classNames";
 import { NavBar } from "widgets/NavBar";
 
 const App = () => {
-    const { theme, handleToggleTheme } = useTheme();
+    const { theme } = useTheme();
     return (
         <div className={classNames("app", {}, [theme])}>
             <NavBar />
-            <button onClick={handleToggleTheme}>TOGGLE THEME</button>
             <AppRouter />
         </div>
     );
