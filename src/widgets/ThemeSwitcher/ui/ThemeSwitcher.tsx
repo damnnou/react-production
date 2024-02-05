@@ -1,10 +1,10 @@
-import React from "react";
-import { classNames } from "shared/lib/classNames/classNames";
-import cls from "./ThemeSwitcher.module.scss";
-import { useTheme, Theme } from "app/providers/ThemeProvider";
-import { ImSun } from "react-icons/im";
-import { Button } from "shared/ui/Button";
-import { ThemeButton } from "shared/ui/Button/ui/Button";
+import React from 'react';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { useTheme, Theme } from 'app/providers/ThemeProvider';
+import { ImSun } from 'react-icons/im';
+import { Button } from 'shared/ui/Button';
+import { ThemeButton } from 'shared/ui/Button/ui/Button';
+import cls from './ThemeSwitcher.module.scss';
 
 interface ThemeSwitcherProps {
     className?: string;

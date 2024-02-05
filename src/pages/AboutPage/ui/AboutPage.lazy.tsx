@@ -1,7 +1,10 @@
-import { lazy } from "react";
+import { lazy } from 'react';
 
 export const AboutPageLazy = lazy(
-    () =>
-        // @ts-ignore
-        new Promise((res) => setTimeout(() => res(import("./AboutPage")), 1500))
+    () => new Promise((res) => {
+        setTimeout(() => {
+            // @ts-ignore
+            res(import('./AboutPage'));
+        }, 1500);
+    }),
 );
